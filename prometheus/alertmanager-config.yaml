@@ -3,7 +3,7 @@ kind: AlertmanagerConfig
 metadata:
   name: alertmanager-config
   labels:
-    alertmanagerConfig: example
+    alertmanagerConfig: alertmanager-config
 spec:
   route:
     groupBy: ['job']

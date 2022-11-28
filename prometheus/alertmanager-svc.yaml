@@ -6,8 +6,9 @@ spec:
   type: LoadBalancer
   ports:
   - name: web
+    nodePort: 30903
     port: 9093
     protocol: TCP
-    targetPort: 9093
+    targetPort: web
   selector:
     alertmanager: alertmanager-app
