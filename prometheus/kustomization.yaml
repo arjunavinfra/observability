@@ -1,0 +1,21 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: observability
+
+namespace: monitoring
+
+commonLabels:
+  app: prometheus
+
+bases:
+ - prometheus-operator-crd
+
+resources:
+
+- prometheus-ns.yaml
+- prometheus.yaml
+- service.yaml
+#- alertmanager.yaml
+#- alertmanager-service.yaml
+#- alertmanager-config.yaml

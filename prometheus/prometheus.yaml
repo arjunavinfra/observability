@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: prometheus-app
+spec:
+  replicas: 1
+#  alerting:
+#    alertmanagers:
+#    - namespace: monitoring
+#      name: alertmanager-app
+#      port: alertmanager-svc
+  serviceMonitorSelector:
+    matchLabels:
+      team: frontend
+  ruleSelector:
+    matchLabels:
+      role: alert-rules
+      prometheus: example
