@@ -11,14 +11,21 @@ Pre Configuration requirment:
 Steps
 
 1. Install the CRD first 
+
   ```cd prometheus-operator-crd```
+  
   ```kubectl create -k ./```
+  
 2. Install the promethus and alertmanager using kustamization
 
   ```cd .. ```
+  
   ```kubectl apply -k ./```
+  
   ```kubectl get all -n monitoring```
+  
   ```kubectl get service/prometheus-svc -n monitoring```
+  
   
   Goto the external IP address 
 
