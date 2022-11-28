@@ -5,8 +5,8 @@ metadata:
 
 namespace: monitoring
 
-bases:
-  - prometheus-operator-crd
+#bases:
+#  - prometheus-operator-crd
 
 resources:
 - namespace.yaml
