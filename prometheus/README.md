@@ -27,6 +27,6 @@ Steps
   ```kubectl get service/prometheus-svc -n monitoring```
   
   
-  Goto the external IP address 
+  Goto the external IP address got from above comment
 
 ![image](https://user-images.githubusercontent.com/118735091/204282982-6e47d41e-421e-4950-b18d-e97271aa2b31.png)
