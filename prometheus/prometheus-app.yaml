@@ -19,3 +19,6 @@ spec:
   ruleNamespaceSelector:
     matchLabels:
       team: frontend
+  additionalScrapeConfigs:
+    name: additional-scrape-configs
+    key: prometheus-additional.yaml

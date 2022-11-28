@@ -1,0 +1,5 @@
+- job_name: "csvserver"
+  static_configs:
+  - targets: ["csvserver-svc.csvserver.svc.cluster.local"]
+
+ 
