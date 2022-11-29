@@ -16,6 +16,11 @@ Steps
   
   ```kubectl create -k ./```
   
+  if your getting any error on `metadata.annotations: Too long: must have at most 262144 byte` then run the below 
+  
+  ```kubectl apply -k ./ --force-conflicts=true --server-side```
+
+  
 2. Install the promethus and alertmanager using kustamization
 
   ```cd .. ```
