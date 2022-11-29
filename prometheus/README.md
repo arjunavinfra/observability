@@ -9,8 +9,11 @@ Pre Configuration requirment:
 3.Setup the CSVSERVER  project from https://github.com/arjunavinfra/csvserver
 
 Steps
+1. Clone the repo git@github.com:arjunavinfra/observability.git
 
-1. Install the promethus and alertmanager using kustamization
+2. ```cd observability/prometheus/```
+
+3. Install the prometheus and alertmanager using kustamization
 
   ```kubectl apply -k ./ --force-conflicts=true --server-side```
   
