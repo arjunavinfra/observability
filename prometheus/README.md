@@ -10,17 +10,9 @@ Pre Configuration requirment:
 
 Steps
 
-1. Install the CRD first 
+1. Install the promethus and alertmanager using kustamization
 
-  ```cd prometheus-operator-crd```
-  
-  ```kubectl create -k ./```
-  
-2. Install the promethus and alertmanager using kustamization
-
-  ```cd .. ```
-  
-  ```kubectl apply -k ./```
+  ```kubectl apply -k ./ --force-conflicts=true --server-side```
   
   ```kubectl get all -n monitoring```
   
@@ -30,3 +22,5 @@ Steps
   Goto the external IP address got from above comment
 
 ![image](https://user-images.githubusercontent.com/118735091/204282982-6e47d41e-421e-4950-b18d-e97271aa2b31.png)
+
+![image](https://user-images.githubusercontent.com/118735091/204308426-c75a3f19-19d3-4c65-a881-5e4a06b23e14.png)
