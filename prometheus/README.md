@@ -10,22 +10,9 @@ Pre Configuration requirment:
 
 Steps
 
-1. Install the CRD first 
+1. Install the promethus and alertmanager using kustamization
 
-  ```cd prometheus-operator-crd```
-  
-  ```kubectl create -k ./```
-  
-  if your getting any error on `metadata.annotations: Too long: must have at most 262144 byte` then run the below 
-  
   ```kubectl apply -k ./ --force-conflicts=true --server-side```
-
-  
-2. Install the promethus and alertmanager using kustamization
-
-  ```cd .. ```
-  
-  ```kubectl apply -k ./```
   
   ```kubectl get all -n monitoring```
   
